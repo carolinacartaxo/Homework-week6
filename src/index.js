@@ -28,3 +28,6 @@ let currentTime = new Date();
 
 let dateElement = document.querySelector("#date");
 dateElement.innerHTML = formatDate(currentTime);
+
+let searchForm = document.querySelector("#search-form");
+searchForm.addEventListener("submit", handleSubmit);
