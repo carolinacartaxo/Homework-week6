@@ -24,6 +24,19 @@ function formatDate(date) {
   return `${day} ${hours}:${minutes}`;
 }
 
+function displayWeatherCondition(response) {
+  document.querySelector("#city").innerHTML = response.data.name;
+  document.querySelector("#temperature").innerHTML = Math.round(
+    response.data.main.temp
+  );
+  document.querySelector("#humidity").innerHTML = response.data.main.humidity;
+  document.querySelector("#wind").innerHTML = Math.round(
+    response.data.wind.speed
+  );
+  document.querySelector("#weather-description").innerHTML =
+    response.data.weather[0].main;
+}
+
 function searchCity(city) {
   let apiKey = "05e214af8651bbbba475bd80ee356932";
   let apiEndpoint = "https://api.openweathermap.org/data/2.5/weather";
