@@ -1,0 +1,88 @@
+body {
+  font-family: Arial, sans-serif;
+}
+
+h1 {
+  color: #7c7c7c;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 28px;
+  margin: 0;
+}
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  color: #7c7c7c;
+  font-size: 16px;
+  font-weight: 100;
+  height: 19px;
+  list-style: none;
+}
+
+.container {
+  margin: auto;
+  width: 933px;
+  height: 625px;
+  padding: 0px;
+}
+
+.weekDays {
+  padding: 15px;
+  margin: 20px auto;
+  line-height: 15px;
+  text-align: center;
+}
+
+.weekDays:hover {
+  background: #fffbef;
+  border-radius: 10px;
+  transition: all 200ms ease-in-out;
+}
+
+.weather-app {
+  border: 1px solid #dadde1;
+  padding: 15px;
+  margin: 20px auto;
+  border-radius: 10px;
+  max-width: 700px;
+  background: #fffbef;
+}
+
+.temperature {
+  color: rgb(33, 33, 33);
+  padding: 15px;
+  font-size: 64px;
+  font-weight: 400;
+  line-height: 1;
+  text-align: center;
+}
+.units {
+  position: relative;
+  top: -34px;
+  right: 15px;
+}
+
+.search-form {
+  margin-bottom: 20px;
+}
+.mainTemperature {
+  padding: 15px;
+  margin: 0 auto;
+}
+
+.main-icon {
+  height: 94px;
+  width: 94px;
+  margin-right: -5px;
+  margin-top: -15px;
+}
+
+.weather-icon {
+  height: 44px;
+  width: 44px;
+  margin-right: 10px;
+  margin-left: 15px;
+}
