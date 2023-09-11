@@ -25,3 +25,6 @@ function formatDate(date) {
 }
 
 let currentTime = new Date();
+
+let dateElement = document.querySelector("#date");
+dateElement.innerHTML = formatDate(currentTime);
