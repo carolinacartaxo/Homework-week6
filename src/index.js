@@ -50,6 +50,11 @@ function handleSubmit(event) {
   searchCity(city);
 }
 
+function getCurrentLocation(event) {
+  event.preventDefault();
+  navigator.geolocation.getCurrentPosition(searchLocation);
+}
+
 let currentTime = new Date();
 
 let dateElement = document.querySelector("#date");
