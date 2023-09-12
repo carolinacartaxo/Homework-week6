@@ -4,9 +4,8 @@ body {
 
 h1 {
   color: #7c7c7c;
-  font-size: 24px;
+  font-size: 28px;
   font-weight: 400;
-  line-height: 28px;
   margin: 0;
 }
 ul {
@@ -85,4 +84,22 @@ li {
   width: 44px;
   margin-right: 10px;
   margin-left: 15px;
+}
+
+#current-location-button {
+  background: #ffb40d;
+  border: #ffb40d;
+}
+
+#search-button {
+  background: #99d1ff;
+  border: #99d1ff;
+}
+
+.footing {
+  color: #7c7c7c;
+}
+
+.min {
+  color: darkgray;
 }
