@@ -23,7 +23,7 @@ li {
 
 .container {
   margin: auto;
-  width: 933px;
+  max-width: 800px;
   height: 625px;
   padding: 0px;
 }
@@ -60,8 +60,9 @@ li {
 }
 .units {
   position: relative;
-  top: -34px;
+  top: 14px;
   right: 15px;
+  padding: 5px;
 }
 
 .search-form {
@@ -75,8 +76,6 @@ li {
 .main-icon {
   height: 94px;
   width: 94px;
-  margin-right: -5px;
-  margin-top: -15px;
 }
 
 .weather-icon {
