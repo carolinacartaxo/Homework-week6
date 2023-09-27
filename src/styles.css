@@ -47,7 +47,7 @@ a {
   margin: 20px auto;
   border-radius: 10px;
   max-width: 700px;
-  background: #fffbef;
+  background: #fff6f4;
 }
 
 #temperature {
@@ -66,6 +66,15 @@ a {
   padding: 5px;
   font-size: 16px;
   top: -54px;
+}
+
+.active {
+  color: rgb(33, 33, 33);
+  cursor: default;
+}
+
+.active:hover {
+  text-decoration: none;
 }
 
 .search-form {
@@ -89,8 +98,8 @@ a {
 }
 
 #current-location-button {
-  background: #ffb40d;
-  border: #ffb40d;
+  background: #f9977f;
+  border: #f9977f;
 }
 
 #search-button {
@@ -104,13 +113,4 @@ a {
 
 .min {
   color: darkgray;
-}
-
-.weather-temperature .active {
-  color: rgb(33, 33, 33);
-  cursor: default;
-}
-
-.weather-temperature .active:hover {
-  text-decoration: none;
 }
