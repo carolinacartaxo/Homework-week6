@@ -47,26 +47,30 @@
             </div>
           </div>
         </form>
-        <h1 id="city"></h1>
-        <ul>
-          <li id="date"></li>
-          <li id="weather-description"></li>
-        </ul>
+        <div class="overview">
+          <h1 id="city"></h1>
+          <ul>
+            <li id="date"></li>
+            <li id="weather-description"></li>
+          </ul>
+        </div>
         <div class="row">
           <div class="col">
-            <div class="d-flex mainTemperature">
+            <div class="d-flex weather-temperature">
               <img src="" alt="" id="icon" class="align-self-start" />
-              <span id="temperature" class="temperature align-self-end"></span>
-              <span class="units"
-                ><a href="#" id="celsius-link" class="active">°C </a> |
-                <a href="#" id="fahrenheit-link">°F</a>
-              </span>
+              <strong id="temperature"></strong>
+              <div class="align-self-end">
+                <span class="units">
+                  <a href="#" id="celsius-link" class="active">°C </a> |
+                  <a href="#" id="fahrenheit-link">°F</a></span
+                >
+              </div>
             </div>
           </div>
-          <div class="col-4">
+          <div class="col">
             <ul>
-              <li>Humidity: <span id="humidity"></span>%</li>
-              <li>Wind: <span id="wind"></span>km/h</li>
+              <li>Humidity: <span id="humidity"> </span>%</li>
+              <li>Wind: <span id="wind"> </span>km/h</li>
             </ul>
           </div>
           <div class="weekDays">

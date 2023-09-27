@@ -14,15 +14,21 @@ ul {
 }
 
 li {
-  color: #7c7c7c;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  color: rgb(135, 135, 135);
   font-size: 16px;
   font-weight: 100;
-  height: 19px;
-  list-style: none;
+  line-height: 19px;
+  text-transform: capitalize;
 }
 
+a {
+  text-decoration: none;
+}
 .container {
-  margin: auto;
+  margin: 30px auto;
   max-width: 800px;
   height: 625px;
   padding: 0px;
@@ -35,12 +41,6 @@ li {
   text-align: center;
 }
 
-.weekDays:hover {
-  background: #fffbef;
-  border-radius: 10px;
-  transition: all 200ms ease-in-out;
-}
-
 .weather-app {
   border: 1px solid #dadde1;
   padding: 15px;
@@ -50,7 +50,9 @@ li {
   background: #fffbef;
 }
 
-.temperature {
+#temperature {
+  position: relative;
+  right: 15px;
   color: rgb(33, 33, 33);
   padding: 15px;
   font-size: 64px;
@@ -60,22 +62,23 @@ li {
 }
 .units {
   position: relative;
-  top: 14px;
-  right: 15px;
+  right: 30px;
   padding: 5px;
+  font-size: 16px;
+  top: -54px;
 }
 
 .search-form {
   margin-bottom: 20px;
 }
-.mainTemperature {
-  padding: 15px;
-  margin: 0 auto;
-}
 
-.main-icon {
+#icon {
+  position: relative;
+  left: 5px;
   height: 94px;
   width: 94px;
+  margin-right: 5px;
+  padding: 0;
 }
 
 .weather-icon {
@@ -101,4 +104,13 @@ li {
 
 .min {
   color: darkgray;
+}
+
+.weather-temperature .active {
+  color: rgb(33, 33, 33);
+  cursor: default;
+}
+
+.weather-temperature .active:hover {
+  text-decoration: none;
 }
