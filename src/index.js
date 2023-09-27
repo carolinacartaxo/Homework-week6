@@ -35,6 +35,8 @@ function displayWeatherCondition(response) {
   );
   document.querySelector("#weather-description").innerHTML =
     response.data.weather[0].main;
+
+  celsiusTemperature = response.data.main.temp;
 }
 
 function searchCity(city) {
@@ -62,6 +64,8 @@ function getCurrentLocation(event) {
   event.preventDefault();
   navigator.geolocation.getCurrentPosition(searchLocation);
 }
+
+let celsiusTemperature = null;
 
 let currentTime = new Date();
 
